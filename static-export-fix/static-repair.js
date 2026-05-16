@@ -10,6 +10,8 @@
   ready(function () {
     document.querySelectorAll(".frm-fluent-form").forEach(function (form) {
       form.classList.remove("ff-form-loading");
+      form.setAttribute("novalidate", "novalidate");
+
       form.addEventListener("submit", function (event) {
         event.preventDefault();
 
